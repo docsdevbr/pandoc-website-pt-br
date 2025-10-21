@@ -29,14 +29,14 @@ Você pode apoiar o projeto através do [GitHub Sponsors][github-sponsors] ou
 
 Copyright (c) 2006-2024 John MacFarlane.
 
-Documentação licenciada sob a [Licença Pública Geral GNU Versão 3][license].<br>
+Documentação licenciada sob a [Licença Pública Geral GNU Versão 2][license].<br>
 A obra original foi traduzida do inglês para o português brasileiro.
 
 [badge-contributors]: https://img.shields.io/github/contributors/docsdevbr/pandoc-doc-pt-br
 
 [badge-github-sponsors]: https://img.shields.io/github/sponsors/docsdevbr
 
-[badge-license]: https://img.shields.io/github/license/docsdevbr/pandoc-doc-pt-br
+[badge-license]: https://img.shields.io/badge/license-GPL--2.0-green
 
 [badge-readme-en]: https://img.shields.io/badge/lang-en-blue
 

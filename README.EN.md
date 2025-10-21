@@ -37,7 +37,7 @@ The original work was translated from English into Brazilian Portuguese.
 
 [badge-github-sponsors]: https://img.shields.io/github/sponsors/docsdevbr
 
-[badge-license]: https://img.shields.io/github/license/docsdevbr/pandoc-doc-pt-br
+[badge-license]: https://img.shields.io/badge/license-GPL--2.0-green
 
 [badge-readme-en]: https://img.shields.io/badge/lang-en-blue
 
