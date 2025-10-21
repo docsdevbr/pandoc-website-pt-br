@@ -1,4 +1,10 @@
 ---
+# Copyright (c) 2006-2024 John MacFarlane.
+
+# Documentation licensed under the GNU General Public License Version 2.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/jgm/pandoc/blob/main/COPYRIGHT
+
 author:
 - Albert Krewinkel
 - John MacFarlane
@@ -602,6 +608,12 @@ If the contents of file `occupations.md` are
 
 ``` markdown
 ---
+# Copyright (c) 2006-2024 John MacFarlane.
+
+# Documentation licensed under the GNU General Public License Version 2.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/jgm/pandoc/blob/main/COPYRIGHT
+
 name: Samuel Q. Smith
 occupation: Professor of Oenology
 ---
@@ -734,9 +746,9 @@ end
 
 ## Creating a table
 
-This filter creates a document that contains the following 
-table with 5 columns. It serves as a working example of how 
-to use the [`pandoc.Table`](#pandoc.Table) constructor. 
+This filter creates a document that contains the following
+table with 5 columns. It serves as a working example of how
+to use the [`pandoc.Table`](#pandoc.Table) constructor.
 
 +--------+--------+--------+--------+---+
 | This   | is my  | table  | header |   |
@@ -752,14 +764,14 @@ to use the [`pandoc.Table`](#pandoc.Table) constructor.
 
 Note that:
 
-- The number of columns in the resulting Table element is 
+- The number of columns in the resulting Table element is
   equal to the number of entries in the `colspecs` parameter.
 
-- A [ColSpec] object must contain the cell alignment, but the 
+- A [ColSpec] object must contain the cell alignment, but the
   column width is optional.
 
-- A [TableBody] object is specified using a Lua table in the 
-  `bodies` parameter because there is no `pandoc.TableBody` 
+- A [TableBody] object is specified using a Lua table in the
+  `bodies` parameter because there is no `pandoc.TableBody`
   constructor.
 
 ```lua
@@ -767,15 +779,15 @@ function Pandoc ()
   local caption = pandoc.Caption( "This is my table caption." )
   local colspecs = {
     { pandoc.AlignLeft },
-    { pandoc.AlignDefault }, 
-    { pandoc.AlignCenter }, 
+    { pandoc.AlignDefault },
+    { pandoc.AlignCenter },
     { pandoc.AlignRight },
     { pandoc.AlignDefault }
   }
   local head = pandoc.TableHead{
     pandoc.Row{
-      pandoc.Cell( "This" ), 
-      pandoc.Cell( "is my" ), 
+      pandoc.Cell( "This" ),
+      pandoc.Cell( "is my" ),
       pandoc.Cell( "table" ),
       pandoc.Cell( "header" )
     }
@@ -783,15 +795,15 @@ function Pandoc ()
   local bodies = {
     {
       attr={},
-      body={ 
+      body={
         pandoc.Row{
-          pandoc.Cell( "Cell 1" ), 
-          pandoc.Cell( "Cell 2" ), 
+          pandoc.Cell( "Cell 1" ),
+          pandoc.Cell( "Cell 2" ),
           pandoc.Cell( "Cell 3" )
         },
         pandoc.Row{
-          pandoc.Cell( "Cell 4" ), 
-          pandoc.Cell( "Cell 5" ), 
+          pandoc.Cell( "Cell 4" ),
+          pandoc.Cell( "Cell 5" ),
           pandoc.Cell( "Cell 6" )
         }
       },
@@ -804,8 +816,8 @@ function Pandoc ()
       pandoc.Cell( "This is my table footer.", pandoc.AlignDefault, 1, 4 )
     }
   }
-  return pandoc.Pandoc { 
-    pandoc.Table(caption, colspecs, head, bodies, foot) 
+  return pandoc.Pandoc {
+    pandoc.Table(caption, colspecs, head, bodies, foot)
   }
 end
 ```
@@ -813,7 +825,7 @@ end
 ## Extracting links from a document
 
 This filter creates a document containing a table that lists
-the URLs the input document links to, together with the 
+the URLs the input document links to, together with the
 number of links to each URL.
 
 ```lua
@@ -830,8 +842,8 @@ end
 
 function Pandoc ()
   local caption = pandoc.Caption("Link count.")
-  local colspecs = { 
-    { pandoc.AlignDefault, 0.8 }, 
+  local colspecs = {
+    { pandoc.AlignDefault, 0.8 },
     { pandoc.AlignLeft, 0.2 }
   }
   local head = pandoc.TableHead{
@@ -840,9 +852,9 @@ function Pandoc ()
   local foot = pandoc.TableFoot()
   local rows = {}
   for link, count in pairs(links) do
-    rows[#rows + 1] = pandoc.Row{ 
-        pandoc.Cell( link ), 
-        pandoc.Cell( pandoc.utils.stringify(count) ) 
+    rows[#rows + 1] = pandoc.Row{
+        pandoc.Cell( link ),
+        pandoc.Cell( pandoc.utils.stringify(count) )
     }
   end
   local bodies = {

@@ -1,4 +1,10 @@
 ---
+# Copyright (c) 2006-2024 John MacFarlane.
+
+# Documentation licensed under the GNU General Public License Version 2.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/jgm/pandoc/blob/main/COPYRIGHT
+
 title: XML
 author: massifrg@gmail.com
 ---

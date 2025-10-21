@@ -1,4 +1,10 @@
 ---
+# Copyright (c) 2006-2024 John MacFarlane.
+
+# Documentation licensed under the GNU General Public License Version 2.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/jgm/pandoc/blob/main/COPYRIGHT
+
 title: Creating an ebook with pandoc
 author: John MacFarlane
 ---
@@ -6,7 +12,7 @@ author: John MacFarlane
 Starting with version 1.6, pandoc can produce output in the [EPUB]
 electronic book format. EPUB books can be viewed on iPads, Nooks, and
 other electronic book readers, including many smart phones. (They can
-also be converted to Kindle books using the GUI only [KindlePreviewer] 
+also be converted to Kindle books using the GUI only [KindlePreviewer]
 on Windows and Mac OSX. [KindleGen] – which offers a command line
 interface and supports [Linux][KindleGenLinux], [Mac OSX][KindleGenMacOSX]
 and [Windows][KindleGenWindows] – has been deprecated, but binaries can still

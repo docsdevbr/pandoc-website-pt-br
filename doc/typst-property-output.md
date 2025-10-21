@@ -1,4 +1,10 @@
 ---
+# Copyright (c) 2006-2024 John MacFarlane.
+
+# Documentation licensed under the GNU General Public License Version 2.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/jgm/pandoc/blob/main/COPYRIGHT
+
 title: Typst property output
 author: Gordon Woodhull
 ---
@@ -29,7 +35,7 @@ The parameter values are [Typst code](https://typst.app/docs/reference/syntax/#m
 Pandoc Typst property output
 ----------------------------
 
-For the set of supported Pandoc elements, the Pandoc Typst Writer will output attributes as parameters to corresponding Typst elements or set-text rules. 
+For the set of supported Pandoc elements, the Pandoc Typst Writer will output attributes as parameters to corresponding Typst elements or set-text rules.
 
 The Typst Writer looks for attributes with keys of the form `typst:prop` or `typst:text:prop` and assumes the values are raw Typst code.
 

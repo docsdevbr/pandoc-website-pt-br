@@ -1,4 +1,10 @@
 ---
+# Copyright (c) 2006-2024 John MacFarlane.
+
+# Documentation licensed under the GNU General Public License Version 2.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/jgm/pandoc/blob/main/COPYRIGHT
+
 title: Org-mode features and differences
 author: Albert Krewinkel
 ---
@@ -58,6 +64,12 @@ with level > 3 differently because org-mode sets `org-export-headline-levels`
 
 Format-specific options
 -----------------------
+# Copyright (c) 2006-2024 John MacFarlane.
+
+# Documentation licensed under the GNU General Public License Version 2.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/jgm/pandoc/blob/main/COPYRIGHT
+
 
 Emacs Org-mode supports additional export options which work for
 specific export formats. Some of these options' behavior differs
@@ -178,6 +190,12 @@ and grid tables (tables created by [table.el]).
 
 Column widths
 -------------
+# Copyright (c) 2006-2024 John MacFarlane.
+
+# Documentation licensed under the GNU General Public License Version 2.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/jgm/pandoc/blob/main/COPYRIGHT
+
 
 Org mode tables don't allow line-breaks within cells, and lines
 which contain text can get very long. This often leads to tables

@@ -1,4 +1,10 @@
 ---
+# Copyright (c) 2006-2024 John MacFarlane.
+
+# Documentation licensed under the GNU General Public License Version 2.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/jgm/pandoc/blob/main/COPYRIGHT
+
 title: Pandoc Extras
 author: John MacFarlane
 ---
@@ -67,7 +73,7 @@ complete list, see the [Pandoc Extras wiki page](https://github.com/jgm/pandoc/w
 ### Academic publishing workflows
 
   - [Quarto](https://quarto.org/) is an open-source scientific and technical publishing system
-    to make reproducible, production quality 
+    to make reproducible, production quality
     articles, presentations, websites, blogs, and books.
     It supports equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.
   - [Manubot](https://manubot.org) is a workflow and set of tools for the next
