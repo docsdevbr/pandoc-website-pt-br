@@ -38,11 +38,11 @@ The original work was translated from English into Brazilian Portuguese.
 
 [badge-github-sponsors]: https://img.shields.io/github/sponsors/docsdevbr
 
-[badge-license]: https://img.shields.io/badge/license-GPL--2.0--or--later-green
+[badge-license]: https://img.shields.io/badge/license-GPL--2.0--or--later-blue
 
 [badge-readme-en]: https://img.shields.io/badge/lang-en-blue
 
-[badge-readme-pt-br]: https://img.shields.io/badge/lang-pt--br-blue
+[badge-readme-pt-br]: https://img.shields.io/badge/lang-pt--br-dark--green
 
 [badge-reuse]: https://api.reuse.software/badge/github.com/docsdevbr/pandoc-website-pt-br
 
