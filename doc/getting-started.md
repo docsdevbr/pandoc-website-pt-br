@@ -7,159 +7,175 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/docsdevbr/pandoc-website-pt-br/blob/-/LICENSES/GPL-2.0-or-later.txt
 
-title: Getting started with pandoc
+source_url: https://github.com/jgm/pandoc/blob/3.12/doc/getting-started.md
+source_revision: 80303beb35cff4ae8aab571a65d4e0938f0a7970
+translation_status: ready
+
+title: Primeiros passos com o pandoc
 author: John MacFarlane
 ---
 
-This document is for people who are unfamiliar with command line
-tools.  Command-line experts can go straight to the [User's
-Guide](https://pandoc.org/MANUAL.html) or the pandoc man page.
+Este documento destina-se a pessoas que não estão familiarizadas com ferramentas
+de linha de comando.
+Especialistas em linha de comando podem ir diretamente para o
+[Guia da Pessoa Usuária](https://pandoc.org/MANUAL.html)
+ou para a página de manual do pandoc.
 
-# Step 1:  Install pandoc
+# Passo 1: instale o pandoc
 
-First, install pandoc, following the [instructions for
-your platform](https://pandoc.org/installing.html).
+Primeiro, instale o pandoc seguindo as
+[instruções para a sua plataforma](https://pandoc.org/installing.html).
 
-# Step 2:  Open a terminal
+# Passo 2: abra um terminal
 
-Pandoc is a command-line tool.  There is no graphic user interface.
-So, to use it, you'll need to open a terminal window:
+O pandoc é uma ferramenta de linha de comando.
+Não possui interface gráfica de pessoa usuária.
+Portanto, para usá-lo, você precisará abrir uma janela de terminal:
 
-- On OS X, the Terminal application can be found in
-  `/Applications/Utilities`.  Open a Finder window and go to
-  `Applications`, then `Utilities`.  Then double click on
-  `Terminal`.  (Or, click the spotlight icon in the upper right
-  hand corner of your screen and type `Terminal` -- you should
-  see `Terminal` under `Applications`.)
+- No OS X, a aplicação Terminal pode ser encontrada em
+  `/Applications/Utilities`.
+  Abra uma janela do Finder e vá para `Applications` e, em seguida, `Utilities`.
+  Depois, clique duas vezes em `Terminal`.
+  (Ou clique no ícone da lanterna no canto superior direito da tela e digite
+  `Terminal` — você deverá ver o `Terminal` em `Applications`.)
 
-- On Windows, you can use either the classic command prompt or the
-  more modern PowerShell terminal. If you use Windows in desktop
-  mode, run the `cmd` or `powershell` command from the Start menu.
-  If you use the Windows 8 start screen instead, simply type
-  `cmd` or `powershell`, and then run either the "Command
-  Prompt" or "Windows Powershell" application.  If you are using
-  `cmd`, type `chcp 65001` before using pandoc, to set the
-  encoding to UTF-8.
+- No Windows, você pode usar o prompt de comando clássico ou o terminal
+  PowerShell, que é mais moderno.
+  Se você usa o Windows no modo desktop, execute o comando `cmd` ou `powershell`
+  a partir do menu Iniciar.
+  Se você usa a tela inicial do Windows 8, basta digitar `cmd` ou `powershell`
+  e, em seguida, executar a aplicação "Prompt de Comando" ou
+  "Windows PowerShell".
+  Se estiver usando o `cmd`, digite `chcp 65001` antes de usar o pandoc para
+  definir a codificação como UTF-8.
 
-- On Linux, there are many possible configurations, depending on
-  what desktop environment you're using:
+- No Linux, existem muitas configurações possíveis, dependendo do ambiente de
+  desktop que você está usando:
 
-    * In Unity, use the search function on the `Dash`, and search
-      for `Terminal`.  Or, use the keyboard shortcut `Ctrl-Alt-T`.
-    * In Gnome, go to `Applications`, then `Accessories`, and
-      select `Terminal`, or use `Ctrl-Alt-T`.
-    * In XFCE, go to `Applications`, then `System`, then `Terminal`,
-      or use `Super-T`.
-    * In KDE, go to `KMenu`, then `System`, then `Terminal Program (Konsole)`.
+  * No Unity, use a função de busca no `Dash` e procure por `Terminal`.
+    Ou use o atalho de teclado `Ctrl-Alt-T`.
+  * No Gnome, vá para `Applications`, depois `Accessories` e selecione
+    `Terminal`, ou use `Ctrl-Alt-T`.
+  * No XFCE, vá para `Applications`, depois `System` e `Terminal`, ou use
+    `Super-T`.
+  * No KDE, vá para `KMenu`, depois `System` e `Terminal Program (Konsole)`.
 
-You should now see a rectangle with a "prompt" (possibly just a symbol
-like `%`, but probably including more information, such as your
-username and directory), and a blinking cursor.
+Agora você deve ver um retângulo com um "prompt" (possivelmente apenas um
+símbolo como `%`, mas provavelmente incluindo mais informações, como seu nome de
+usuário e diretório) e um cursor piscando.
 
-Let's verify that pandoc is installed.  Type
+Vamos verificar se o pandoc está instalado.
+Digite
 
     pandoc --version
 
-and hit enter.  You should see a message telling you which version
-of pandoc is installed, and giving you some additional information.
+e pressione Enter.
+Você deverá ver uma mensagem informando qual versão do pandoc está instalada e
+fornecendo algumas informações adicionais.
 
-# Step 3:  Changing directories
+# Passo 3: mudando de diretório
 
-First, let's see where we are.  Type
+Primeiro, vamos ver onde estamos.
+Digite
 
     pwd
 
-on Linux or OSX, or
+no Linux ou OSX, ou
 
     echo %cd%
 
-on Windows, and hit enter.  Your terminal should print your current
-working directory.  (Guess what `pwd` stands for?)  This should be your
-home directory.
+no Windows, e pressione Enter.
+O terminal deve exibir o seu diretório de trabalho atual.
+(Consegue adivinhar o que `pwd` significa?)
+Esse deve ser o seu diretório pessoal.
 
-Let's navigate now to our `Documents` directory:  type
+Vamos navegar agora para o diretório `Documents`: digite
 
     cd Documents
 
-and hit enter.  Now type
+e pressione Enter.
+Agora digite
 
     pwd
 
-(or `echo %cd%` on Windows)
-again.  You should be in the `Documents` subdirectory of your home
-directory.  To go back to your home directory, you could type
+(ou `echo %cd%` no Windows) novamente.
+Você deve estar no subdiretório `Documents` do seu diretório pessoal.
+Para voltar ao diretório pessoal, você pode digitar
 
     cd ..
 
-The `..` means "one level up."
+O `..` significa "um nível acima".
 
-Go back to your `Documents` directory if you're not there already.
-Let's try creating a subdirectory called `pandoc-test`:
+Volte para o diretório `Documents` se ainda não estiver lá.
+Vamos tentar criar um subdiretório chamado `pandoc-test`:
 
     mkdir pandoc-test
 
-Now change to the `pandoc-test` directory:
+Agora, entre no diretório `pandoc-test`:
 
     cd pandoc-test
 
-If the prompt doesn't tell you what directory you're in, you can
-confirm that you're there by doing
+Se o prompt não indicar em qual diretório você está, você pode confirmar sua
+localização executando
 
     pwd
 
-(or `echo %cd%`) again.
+(ou `echo %cd%`) novamente.
 
-OK, that's all you need to know for now about using the terminal.
-But here's a secret that will save you a lot of typing.  You can
-always type the up-arrow key to go back through your history
-of commands.  So if you want to use a command you typed earlier,
-you don't need to type it again:  just use up-arrow until it comes
-up.  Try this.  (You can use down-arrow as well, to go the other
-direction.)  Once you have the command, you can also use the
-left and right arrows and the backspace/delete key to edit it.
+Certo, isso é tudo o que você precisa saber por enquanto sobre o uso do
+terminal.
+Mas aqui vai um segredo que vai poupar você de muita digitação.
+Você pode sempre usar a tecla de seta para cima para percorrer o histórico
+de comandos.
+Assim, se quiser usar um comando que digitou anteriormente, não precisa
+digitá-lo novamente: basta usar a seta para cima até que ele apareça.
+Experimente.
+(Você também pode usar a seta para baixo para navegar na direção oposta.)
+Após encontrar o comando, pode usar as setas para a esquerda e para a direita e
+a tecla Backspace/Delete para editá-lo.
 
-Most terminals also support tab completion of directories and
-filenames.  To try this, let's first go back up to our `Documents`
-directory:
+A maioria dos terminais também suporta o preenchimento automático de nomes de
+diretórios e arquivos via tecla Tab.
+Para testar isso, vamos primeiro voltar ao diretório `Documents`:
 
     cd ..
 
-Now, type
+Agora, digite
 
     cd pandoc-
 
-and hit the tab key instead of enter.  Your terminal should fill
-in the rest (`test`), and then you can hit enter.
+e pressione a tecla Tab em vez de Enter.
+Seu terminal deve completar o restante (`test`), e então você pode pressionar
+Enter.
 
-To review:
+Para recapitular:
 
-  - `pwd` (or `echo %cd%` on Windows)
-    to see what the current working directory is.
-  - `cd foo` to change to the `foo` subdirectory of your working
-    directory.
-  - `cd ..` to move up to the parent of the working directory.
-  - `mkdir foo` to create a subdirectory called `foo` in the
-    working directory.
-  - up-arrow to go back through your command history.
-  - tab to complete directories and file names.
+- `pwd` (ou `echo %cd%` no Windows) para ver qual é o diretório de trabalho
+  atual.
+- `cd foo` para mudar para o subdiretório `foo` do seu diretório de trabalho.
+- `cd ..` para subir para o diretório pai do diretório de trabalho.
+- `mkdir foo` para criar um subdiretório chamado `foo` no diretório de trabalho.
+- seta para cima para navegar pelo histórico de comandos.
+- tecla Tab para completar nomes de diretórios e arquivos.
 
-# Step 4:  Using pandoc as a filter
+# Passo 4: usando o pandoc como filtro
 
-Type
+Digite
 
     pandoc
 
-and hit enter.  You should see the cursor just sitting there, waiting
-for you to type something.  Type this:
+e pressione Enter.
+Você deverá ver o cursor parado, aguardando que você digite algo.
+Digite o seguinte:
 
     Hello *pandoc*!
 
     - one
     - two
 
-When you're finished (the cursor should be at the beginning of the line),
-type `Ctrl-D` on OS X or Linux, or `Ctrl-Z` followed
-by `Enter` on Windows.  You should now see your text converted to HTML!
+Quando terminar (o cursor deve estar no início da linha), digite `Ctrl-D` no OS
+X ou Linux, ou `Ctrl-Z` seguido de `Enter` no Windows.
+Agora você deverá ver seu texto convertido para HTML!
 
     <p>Hello <em>pandoc</em>!</p>
     <ul>
@@ -167,42 +183,46 @@ by `Enter` on Windows.  You should now see your text converted to HTML!
     <li>two</li>
     </ul>
 
-What just happened?  When pandoc is invoked without specifying any
-input files, it operates as a "filter," taking input from the
-terminal and sending its output back to the terminal.  You can use
-this feature to play around with pandoc.
+O que acabou de acontecer?
+Quando o pandoc é invocado sem especificar arquivos de entrada, ele opera como
+um "filtro", recebendo a entrada do terminal e enviando a saída de volta para o
+terminal.
+Você pode usar esse recurso para experimentar o pandoc.
 
-By default, input is interpreted as pandoc markdown, and output is
-HTML.  But we can change that.  Let's try converting *from* HTML
-*to* markdown:
+Por padrão, a entrada é interpretada como pandoc markdown e a saída é HTML.
+Mas podemos mudar isso.
+Vamos tentar converter *de* HTML *para* markdown:
 
     pandoc -f html -t markdown
 
-Now type:
+Agora digite:
 
     <p>Hello <em>pandoc</em>!</p>
 
-and hit `Ctrl-D` (or `Ctrl-Z` followed by `Enter` on Windows).
-You should see:
+e pressione `Ctrl-D` (ou `Ctrl-Z` seguido de `Enter` no Windows).
+Você deverá ver:
 
     Hello *pandoc*!
 
-Now try converting something from markdown to LaTeX.  What command
-do you think you should use?
+Agora tente converter algo de markdown para LaTeX.
+Que comando você acha que deve usar?
 
-# Step 5:  Text editor basics
+# Passo 5: noções básicas sobre editores de texto
 
-You'll probably want to use pandoc to convert a file, not to read
-text from the terminal.  That's easy, but first we need to create
-a text file in our `pandoc-test` subdirectory.
+Provavelmente você vai querer usar o pandoc para converter um arquivo, e não
+para ler texto diretamente no terminal.
+Isso é simples, mas primeiro precisamos criar um arquivo de texto no nosso
+subdiretório `pandoc-test`.
 
-**Important:**  To create a text file, you'll need to use a text
-editor, *not* a word processor like Microsoft Word.  On Windows, you
-can use Notepad (in `Accessories`).  On OS X, you can use
-`TextEdit` (in `Applications`).  On Linux, different platforms come
-with different text editors:  Gnome has `GEdit`, and KDE has `Kate`.
+**Importante:** Para criar um arquivo de texto, você precisará usar um editor de
+texto, *não* um processador de texto como o Microsoft Word.
+No Windows, você pode usar o `Bloco de Notas` (em `Acessórios`).
+No OS X, você pode usar o `TextEdit` (em `Applications`).
+No Linux, diferentes plataformas vêm com diferentes editores de texto: o Gnome
+tem o `GEdit` e o KDE tem o `Kate`.
 
-Start up your text editor.  Type the following:
+Abra o seu editor de texto.
+Digite o seguinte:
 
     ---
     title: Test
@@ -215,109 +235,119 @@ Start up your text editor.  Type the following:
     - list one
     - list two
 
-Now save your file as `test1.md` in the directory
-`Documents/pandoc-test`.
+Agora, salve o arquivo como `test1.md` no diretório `Documents/pandoc-test`.
 
-Note:  If you use plain text a lot, you'll want a better editor than
-`Notepad` or `TextEdit`.  You might want to look at
-[Visual Studio Code](https://code.visualstudio.com/) or
-[Sublime Text](https://www.sublimetext.com/) or (if you're willing
-to put in some time learning an unfamiliar interface)
-[Vim](https://www.vim.org) or [Emacs](https://www.gnu.org/software/emacs).
+Nota: Se você trabalha muito com texto simples, vai querer um editor melhor do
+que o `Bloco de Notas` ou o `TextEdit`.
+Você pode dar uma olhada no
+[Visual Studio Code](https://code.visualstudio.com/)
+ou no [Sublime Text](https://www.sublimetext.com/) ou (se estiver disposto a
+dedicar um tempo para aprender uma interface diferente) no
+[Vim](https://www.vim.org) ou no [Emacs](https://www.gnu.org/software/emacs).
 
-# Step 6:  Converting a file
+# Passo 6: convertendo um arquivo
 
-Go back to your terminal.  We should still be in the
-`Documents/pandoc-test` directory.  Verify that with `pwd`.
+Volte ao seu terminal.
+Você ainda deve estar no diretório `Documents/pandoc-test`.
+Verifique isso com o comando `pwd`.
 
-Now type
+Agora digite
 
     ls
 
-(or `dir` if you're on Windows).
-This will list the files in the current directory.  You should see
-the file you created, `test1.md`.
+(ou `dir` se estiver no Windows).
+Isso listará os arquivos no diretório atual.
+Você deve ver o arquivo que criou, `test1.md`.
 
-To convert it to HTML, use this command:
+Para convertê-lo para HTML, use este comando:
 
     pandoc test1.md -f markdown -t html -s -o test1.html
 
-The filename `test1.md` tells pandoc which file to convert.
-The `-s` option says to create a "standalone" file, with a header
-and footer, not just a fragment.  And the `-o test1.html` says
-to put the output in the file `test1.html`.  Note that we could
-have omitted `-f markdown` and `-t html`, since the default
-is to convert from markdown to HTML, but it doesn't hurt to
-include them.
+O nome do arquivo `test1.md` indica ao pandoc qual arquivo converter.
+A opção `-s` instrui a criação de um arquivo "independente", com cabeçalho e
+rodapé, e não apenas um fragmento.
+E a opção `-o test1.html` indica que a saída deve ser salva no arquivo
+`test1.html`.
+Observe que poderíamos ter omitido `-f markdown` e `-t html`, já que o padrão é
+converter de Markdown para HTML, mas não faz mal incluí-los.
 
-Check that the file was created by typing `ls` again.  You
-should see `test1.html`.  Now open this in a browser.  On OS X,
-you can type
+Verifique se o arquivo foi criado digitando `ls` novamente.
+Você deve ver `test1.html`.
+Agora, abra-o em um navegador.
+No OS X, você pode digitar
 
     open test1.html
 
-On Windows, type
+No Windows, digite
 
     .\test1.html
 
-You should see a browser window with your document.
+Você deverá ver uma janela do navegador exibindo seu documento.
 
-To create a LaTeX document, you just need to change the command
-slightly:
+Para criar um documento LaTeX, basta alterar ligeiramente o comando:
 
     pandoc test1.md -f markdown -t latex -s -o test1.tex
 
-Try opening `test1.tex` in your text editor.
+Tente abrir o arquivo `test1.tex` no seu editor de texto.
 
-Pandoc can often figure out the input and output formats from
-the filename extensions.  So, you could have just used:
+O pandoc geralmente consegue identificar os formatos de entrada e saída a partir
+das extensões dos arquivos.
+Portanto, você poderia ter usado apenas:
 
     pandoc test1.md -s -o test1.tex
 
-Pandoc knows you're trying to create a LaTeX document, because of the
-`.tex` extension.
+O pandoc sabe que você está tentando criar um documento LaTeX devido à extensão
+`.tex`.
 
-Now try creating a Word document (with extension `docx`).
+Agora, tente criar um documento do Word (com a extensão `docx`).
 
-If you want to create a PDF, you'll need to have LaTeX installed.
-(See [MacTeX](https://tug.org/mactex/) on OS X,
-[MiKTeX](https://miktex.org) on Windows, or install the texlive
-package on Linux.)  Then do
+Se quiser criar um PDF, você precisará ter o LaTeX instalado.
+(Consulte o [MacTeX](https://tug.org/mactex/) no OS X,  o
+[MiKTeX](https://miktex.org) no Windows ou instale o pacote texlive no Linux.)
+Em seguida, execute
 
     pandoc test1.md -s -o test1.pdf
 
-# Step 7:  Command-line options
+# Passo 7: opções de linha de comando
 
-You now know the basics.  Pandoc has a lot of options.  At this point
-you can start to learn more about them by reading the
-[User's Guide](https://pandoc.org/MANUAL.html).
+Agora você já conhece o básico.
+O pandoc possui muitas opções.
+Neste ponto, você pode começar a aprender mais sobre elas lendo o
+[Guia da Pessoa Usuária](https://pandoc.org/MANUAL.html).
 
-Here's an example.  The `--mathml` option causes pandoc to
-convert TeX math into MathML.  Type
+Aqui está um exemplo.
+A opção `--mathml` faz com que o pandoc converta expressões matemáticas em TeX
+para MathML.
+Digite
 
     pandoc --mathml
 
-then enter this text, followed by `Ctrl-D` (`Ctrl-Z` followed by
-`Enter` on Windows):
+e, em seguida, insira este texto, seguido de `Ctrl-D` (`Ctrl-Z` seguido de
+`Enter` no Windows):
 
     $x = y^2$
 
-Now try the same thing without `--mathml`.  See the difference
-in output?
+Agora tente fazer o mesmo sem a opção `--mathml`.
+Percebeu a diferença na saída?
 
-If you forget an option, or forget which formats are supported, you
-can always do
+Se você esquecer uma opção ou quais formatos são suportados, pode sempre usar
 
     pandoc --help
 
-to get a list of all the supported options.
+para obter uma lista de todas as opções suportadas.
 
-On OS X or Linux systems, you can also do
+Em sistemas OS X ou Linux, você também pode usar
 
     man pandoc
 
-to get the pandoc manual page.  All of this information is also
-in the User's Guide.
+para acessar a página de manual do pandoc.
+Todas essas informações também estão disponíveis no Guia da Pessoa Usuária.
+
+Se tiver dificuldades, você pode sempre fazer perguntas no
+[fórum de discussão](https://github.com/jgm/pandoc/discussions).
+Mas não deixe de consultar as [FAQs](https://pandoc.org/faqs.html) primeiro
+e pesquisar no fórum para ver se a sua dúvida já foi
+respondida anteriormente.
 
 If you get stuck, you can always ask questions on the
 [discussion forum](https://github.com/jgm/pandoc/discussions).
