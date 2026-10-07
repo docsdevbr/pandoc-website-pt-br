@@ -1,5 +1,5 @@
 ---
-# Copyright (c) 2006-2024 John MacFarlane.
+# SPDX-FileCopyrightText: 2006-2024 John MacFarlane.
 
 # SPDX-License-Identifier: GPL-2.0-or-later
 # Documentation licensed under the GNU General Public License Version 2 or
@@ -66,7 +66,7 @@ with level > 3 differently because org-mode sets `org-export-headline-levels`
 
 Format-specific options
 -----------------------
-# Copyright (c) 2006-2024 John MacFarlane.
+# SPDX-FileCopyrightText: 2006-2024 John MacFarlane.
 
 # SPDX-License-Identifier: GPL-2.0-or-later
 # Documentation licensed under the GNU General Public License Version 2 or
@@ -194,7 +194,7 @@ and grid tables (tables created by [table.el]).
 
 Column widths
 -------------
-# Copyright (c) 2006-2024 John MacFarlane.
+# SPDX-FileCopyrightText: 2006-2024 John MacFarlane.
 
 # SPDX-License-Identifier: GPL-2.0-or-later
 # Documentation licensed under the GNU General Public License Version 2 or

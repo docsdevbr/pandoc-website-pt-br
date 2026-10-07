@@ -1,5 +1,5 @@
 ---
-# Copyright (c) 2006-2024 John MacFarlane.
+# SPDX-FileCopyrightText: 2006-2024 John MacFarlane.
 
 # SPDX-License-Identifier: GPL-2.0-or-later
 # Documentation licensed under the GNU General Public License Version 2 or
