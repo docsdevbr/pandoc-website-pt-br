@@ -2,7 +2,7 @@
 
 [![Arquivo README em inglês][badge-readme-en]][readme-en]
 [![Arquivo README em português brasileiro][badge-readme-pt-br]][readme-pt-br]
-[![Licença: GPL-2.0][badge-license]][license]
+[![Licença: GPL-2.0-or-later][badge-license]][license]
 [![Pessoas contribuidoras][badge-contributors]][contributors]
 [![GitHub Sponsors][badge-github-sponsors]][github-sponsors]
 
@@ -29,14 +29,15 @@ apoiar o projeto.
 
 Copyright (c) 2006-2024 John MacFarlane.
 
-Documentação licenciada sob a [Licença Pública Geral GNU Versão 2][license].<br>
+Documentação licenciada sob a
+[Licença Pública Geral GNU Versão 2 ou superior][license].<br/>
 A obra original foi traduzida do inglês para o português brasileiro.
 
 [badge-contributors]: https://img.shields.io/github/contributors/docsdevbr/pandoc-website-pt-br
 
 [badge-github-sponsors]: https://img.shields.io/github/sponsors/docsdevbr
 
-[badge-license]: https://img.shields.io/badge/license-GPL--2.0-green
+[badge-license]: https://img.shields.io/badge/license-GPL--2.0--or--later-green
 
 [badge-readme-en]: https://img.shields.io/badge/lang-en-blue
 
@@ -50,7 +51,7 @@ A obra original foi traduzida do inglês para o português brasileiro.
 
 [github-sponsors]: https://github.com/sponsors/docsdevbr
 
-[license]: LICENSE
+[license]: LICENSES/GPL-2.0-or-later.txt
 
 [page]: https://pt.docs.dev.br/tech/p/pandoc/index.html
 

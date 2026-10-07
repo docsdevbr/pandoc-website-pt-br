@@ -1,9 +1,11 @@
 ---
 # Copyright (c) 2006-2024 John MacFarlane.
 
-# Documentation licensed under the GNU General Public License Version 2.
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Documentation licensed under the GNU General Public License Version 2 or
+# later.
 # The original work was translated from English into Brazilian Portuguese.
-# https://github.com/jgm/pandoc/blob/main/COPYRIGHT
+# https://github.com/docsdevbr/pandoc-website-pt-br/blob/-/LICENSES/GPL-2.0-or-later.txt
 
 title: pandoc-lua
 section: 1

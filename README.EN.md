@@ -2,7 +2,7 @@
 
 [![README file in English][badge-readme-en]][readme-en]
 [![README file in Brazilian Portuguese][badge-readme-pt-br]][readme-pt-br]
-[![License: GPL-2.0][badge-license]][license]
+[![License: GPL-2.0-or-later][badge-license]][license]
 [![Contributors][badge-contributors]][contributors]
 [![GitHub Sponsors][badge-github-sponsors]][github-sponsors]
 
@@ -30,14 +30,14 @@ project.
 Copyright (c) 2006-2024 John MacFarlane.
 
 Documentation licensed under the
-[GNU General Public License Version 2][license].<br>
+[GNU General Public License Version 2 or later][license].<br/>
 The original work was translated from English into Brazilian Portuguese.
 
 [badge-contributors]: https://img.shields.io/github/contributors/docsdevbr/pandoc-website-pt-br
 
 [badge-github-sponsors]: https://img.shields.io/github/sponsors/docsdevbr
 
-[badge-license]: https://img.shields.io/badge/license-GPL--2.0-green
+[badge-license]: https://img.shields.io/badge/license-GPL--2.0--or--later-green
 
 [badge-readme-en]: https://img.shields.io/badge/lang-en-blue
 
@@ -51,7 +51,7 @@ The original work was translated from English into Brazilian Portuguese.
 
 [github-sponsors]: https://github.com/sponsors/docsdevbr
 
-[license]: LICENSE
+[license]: LICENSES/GPL-2.0-or-later.txt
 
 [page]: https://pt.docs.dev.br/tech/p/pandoc/index.html
 
