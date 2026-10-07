@@ -1,4 +1,4 @@
-# [pandoc-doc-pt-br][page]
+# [pandoc-website-pt-br][page]
 
 [![README file in English][badge-readme-en]][readme-en]
 [![README file in Brazilian Portuguese][badge-readme-pt-br]][readme-pt-br]
@@ -6,7 +6,7 @@
 [![Contributors][badge-contributors]][contributors]
 [![GitHub Sponsors][badge-github-sponsors]][github-sponsors]
 
-Translation of the Pandoc documentation into Brazilian Portuguese.
+Translation of the Pandoc website into Brazilian Portuguese.
 
 ## Contributing
 
@@ -33,7 +33,7 @@ Documentation licensed under the
 [GNU General Public License Version 2][license].<br>
 The original work was translated from English into Brazilian Portuguese.
 
-[badge-contributors]: https://img.shields.io/github/contributors/docsdevbr/pandoc-doc-pt-br
+[badge-contributors]: https://img.shields.io/github/contributors/docsdevbr/pandoc-website-pt-br
 
 [badge-github-sponsors]: https://img.shields.io/github/sponsors/docsdevbr
 
@@ -47,7 +47,7 @@ The original work was translated from English into Brazilian Portuguese.
 
 [contributing]: https://github.com/docsdevbr/.github/blob/main/CONTRIBUTING.EN.md
 
-[contributors]: https://github.com/docsdevbr/pandoc-doc-pt-br/graphs/contributors
+[contributors]: https://github.com/docsdevbr/pandoc-website-pt-br/graphs/contributors
 
 [github-sponsors]: https://github.com/sponsors/docsdevbr
 
