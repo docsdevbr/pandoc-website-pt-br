@@ -22,8 +22,8 @@ comunidade.
 
 ## Apoio
 
-Você pode apoiar o projeto através do [GitHub Sponsors][github-sponsors] ou
-[Pix][sponsor].
+Visite nossa [página para pessoas apoiadoras][sponsor] para saber como você pode
+apoiar o projeto.
 
 ## Licença
 
@@ -52,10 +52,10 @@ A obra original foi traduzida do inglês para o português brasileiro.
 
 [license]: LICENSE
 
-[page]: https://pt.docs.dev.br/p/pandoc/docs/
+[page]: https://pt.docs.dev.br/tech/p/pandoc/index.html
 
 [readme-en]: README.EN.md
 
 [readme-pt-br]: README.md
 
-[sponsor]: https://pt.docs.dev.br/sponsor
+[sponsor]: https://pt.docs.dev.br/sponsor.html
